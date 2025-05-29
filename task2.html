@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Link Demonstration</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%);
+    width: 200px; /* Adjust as needed */
+  }
+  h2 {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  List-Task
+</div>
+
+<div class="container">
+  <p>Click any of the following links</p>
+  <p>
+    <a href="https://www.example.com" target="_blank">Opens in New</a> |
+    <a href="https://www.example.com" target="_self">Opens in Self</a> |
+    <a href="https://www.example.com" target="_parent">Opens in Parent</a> |
+    <a href="https://www.example.com" target="_top">Opens in Body</a>
+    </p>
+</div>
+
+<div class="container">
+  <h2>Link to an Email Address</h2>
+  <p>To create a link that opens in the email program (to let them send a new email), use mailto: inside the attribute:</p>
+  <p>
+    <a href="mailto:youremail@example.com">Send email</a>
+  </p>
+</div>
+
+</body>
+</html>
