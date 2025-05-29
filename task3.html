@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table Demonstration</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%);
+    width: 200px;
+  }
+
+
+  .table-style-1 {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 40px;
+  }
+
+  .table-style-1 th,
+  .table-style-1 td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: left;
+  }
+
+  .table-style-1 th {
+    background-color: #B2D8D8; 
+    color: #333;
+  }
+
+  .table-style-1 tr:nth-child(even) {
+    background-color: #e0f2f2;
+  }
+
+  .table-style-1 tr:nth-child(odd) {
+    background-color: #cceeee; 
+  }
+
+ 
+  .table-style-2 {
+    width: 100%;
+    border-spacing: 0; 
+    border: 2px solid #B2D8D8;
+    border-radius: 15px; 
+    overflow: hidden; 
+  }
+
+  .table-style-2 th {
+    background-color: #B2D8D8; 
+    color: #333;
+    padding: 10px 8px;
+    text-align: left;
+    
+  }
+
+  .table-style-2 th:first-child {
+    border-top-left-radius: 13px; 
+    border-bottom-left-radius: 13px;
+  }
+
+  .table-style-2 th:last-child {
+    border-top-right-radius: 13px; 
+    border-bottom-right-radius: 13px;
+  }
+
+
+  .table-style-2 td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table-style-2 tr:last-child td {
+    border-bottom: none; 
+  }
+
+  .table-style-2 tr:nth-child(even) {
+    background-color: #e0f2f2; 
+  }
+
+  .table-style-2 tr:nth-child(odd) {
+    background-color: #cceeee; 
+  }
+
+  
+  .table-style-2 thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+  }
+
+  .table-style-2 tbody {
+    display: block; 
+    width: 100%;
+  }
+
+  .table-style-2 tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  
+  .table-style-2 th:not(:last-child) {
+    border-right: 2px solid #fff; 
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  Table-Task
+</div>
+
+<table class="table-style-1">
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-style-2">
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
