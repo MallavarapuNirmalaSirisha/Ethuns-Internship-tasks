@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Justify Example</title>
+    <style>
+        .justified-text {
+            text-align: justify;
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            line-height: 1.5; 
+        }
+    </style>
+</head>
+<body>
+
+    <p class="justified-text">
+        This is an example paragraph to demonstrate the text-align: justify property.
+        When text is justified, it spreads out evenly to fill the entire width of
+        its container, aligning both the left and right edges. This can create a
+        clean and formal look, often seen in newspapers and books.
+    </p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow Example</title>
+    <style>
+        .shadowed-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+           
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .blue-shadow {
+            font-size: 36px;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.3);
+        }
+
+        .multiple-shadows {
+            font-size: 40px;
+            color: #fff;
+            background-color: #000;
+            padding: 10px;
+            display: inline-block;
+            text-shadow:
+                1px 1px 2px red,    
+                0 0 1em blue,       
+                0 0 0.2em yellow;   
+        }
+    </style>
+</head>
+<body>
+
+    <p class="shadowed-text">Hello, Shadow!</p>
+    <p class="blue-shadow">Stylish Text</p>
+    <p class="multiple-shadows">Complex Shadow</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Shorthand Example</title>
+    <style>
+        .single-font-declaration {
+           
+            font: italic small-caps bold 24px/1.5 "Times New Roman", Times, serif;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .another-example {
+            font: normal 18px Arial, sans-serif; 
+            color: #555;
+        }
+
+        .just-size-family {
+            font: 1.2em Verdana, Geneva, sans-serif; 
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="single-font-declaration">
+        This paragraph uses the 'font' shorthand property to declare
+        its style, variant, weight, size, line-height, and family all at once.
+    </p>
+
+    <p class="another-example">
+        Here's another example using the font shorthand with fewer properties.
+    </p>
+
+    <p class="just-size-family">
+        You can also just specify font-size and font-family, which are mandatory.
+    </p>
+
+</body>
+</html>
